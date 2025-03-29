@@ -6,7 +6,7 @@ import joblib
 import os
 from extract_features import extract_url_features
 
-app = Flask(_name_, static_folder="static")
+app = Flask(__name__, static_folder="static")
 
 # Load the pre-trained model and scaler (ensure these files are in your working directory)
 model = load_model('221IT019_CNN_model.h5')
